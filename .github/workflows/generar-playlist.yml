@@ -1,0 +1,50 @@
+name: Generar playlist desde carpeta music
+
+on:
+  push:
+    paths:
+      - 'music/**'
+  workflow_dispatch:  # permite ejecutarlo manualmente si hace falta
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # necesario para hacer commit del playlist.json
+
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Generar playlist.json
+        run: |
+          echo '[' > playlist.json
+          first=true
+          for f in music/*.{mp3,wav,ogg,m4a,flac,aac}; do
+            [ -f "$f" ] || continue
+            nombre=$(basename "$f")
+            titulo="${nombre%.*}"
+            # Intentar separar Artista - Título (si hay " - ")
+            artista=""
+            if [[ "$titulo" == *" - "* ]]; then
+              artista=$(echo "$titulo" | sed 's/ - .*//')
+              titulo=$(echo "$titulo" | sed 's/.* - //')
+            fi
+            # Reemplazar guiones bajos y capitalizar
+            titulo=$(echo "$titulo" | sed 's/_/ /g' | sed 's/-/ /g' | sed -E 's/\b./\U&/g')
+            if [ "$first" = true ]; then
+              first=false
+            else
+              echo ',' >> playlist.json
+            fi
+            echo "  { \"file\": \"$f\", \"title\": \"$titulo\", \"artist\": \"$artista\" }" >> playlist.json
+          done
+          echo ']' >> playlist.json
+
+      - name: Commit y push del playlist.json
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add playlist.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Actualizar playlist.json automáticamente"
+          git push
