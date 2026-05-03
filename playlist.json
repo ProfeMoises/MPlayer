@@ -33,13 +33,27 @@
 ,
   { "file": "music/09 - Jujuy en carnaval.mp3", "title": "Jujuy En Carnaval", "artist": "09" }
 ,
+  { "file": "music/09-AudioTrack 09.mp3", "title": "09 AudioTrack 09", "artist": "" }
+,
   { "file": "music/10 - De Santa Ana a Valle Colorado.mp3", "title": "De Santa Ana A Valle Colorado", "artist": "10" }
+,
+  { "file": "music/10-AudioTrack 10.mp3", "title": "10 AudioTrack 10", "artist": "" }
 ,
   { "file": "music/11 - Carnavalito del duende.mp3", "title": "Carnavalito Del Duende", "artist": "11" }
 ,
+  { "file": "music/11-AudioTrack 11.mp3", "title": "11 AudioTrack 11", "artist": "" }
+,
   { "file": "music/12 - Lo que viene.mp3", "title": "Lo Que Viene", "artist": "12" }
+,
+  { "file": "music/12-AudioTrack 12.mp3", "title": "12 AudioTrack 12", "artist": "" }
 ,
   { "file": "music/13 - Seleccion de carnavalitos.mp3", "title": "Seleccion De Carnavalitos", "artist": "13" }
 ,
+  { "file": "music/13-AudioTrack 13.mp3", "title": "13 AudioTrack 13", "artist": "" }
+,
   { "file": "music/14 - Si te habré andado.mp3", "title": "Si Te Habré Andado", "artist": "14" }
+,
+  { "file": "music/14-AudioTrack 14.mp3", "title": "14 AudioTrack 14", "artist": "" }
+,
+  { "file": "music/15-AudioTrack 15.mp3", "title": "15 AudioTrack 15", "artist": "" }
 ]
