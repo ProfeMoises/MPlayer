@@ -1,19 +1,35 @@
 [
   { "file": "music/01 - Siempre Jujuy.mp3", "title": "Siempre Jujuy", "artist": "01" }
 ,
+  { "file": "music/01-AudioTrack 01.mp3", "title": "01 AudioTrack 01", "artist": "" }
+,
   { "file": "music/02 - Ritual de la luz.mp3", "title": "Ritual De La Luz", "artist": "02" }
+,
+  { "file": "music/02-AudioTrack 02.mp3", "title": "02 AudioTrack 02", "artist": "" }
 ,
   { "file": "music/03 - Chasquita.mp3", "title": "Chasquita", "artist": "03" }
 ,
+  { "file": "music/03-AudioTrack 03.mp3", "title": "03 AudioTrack 03", "artist": "" }
+,
   { "file": "music/04 - Zamba de León.mp3", "title": "Zamba De León", "artist": "04" }
+,
+  { "file": "music/04-AudioTrack 04.mp3", "title": "04 AudioTrack 04", "artist": "" }
 ,
   { "file": "music/05 - Mariposa ven.mp3", "title": "Mariposa Ven", "artist": "05" }
 ,
+  { "file": "music/05-AudioTrack 05.mp3", "title": "05 AudioTrack 05", "artist": "" }
+,
   { "file": "music/06 - Persiguiendo el viento.mp3", "title": "Persiguiendo El Viento", "artist": "06" }
+,
+  { "file": "music/06-AudioTrack 06.mp3", "title": "06 AudioTrack 06", "artist": "" }
 ,
   { "file": "music/07 - Peregrinos de Río Blanco.mp3", "title": "Peregrinos De Río Blanco", "artist": "07" }
 ,
+  { "file": "music/07-AudioTrack 07.mp3", "title": "07 AudioTrack 07", "artist": "" }
+,
   { "file": "music/08 - Madurando sueños.mp3", "title": "Madurando Sueños", "artist": "08" }
+,
+  { "file": "music/08-AudioTrack 08.mp3", "title": "08 AudioTrack 08", "artist": "" }
 ,
   { "file": "music/09 - Jujuy en carnaval.mp3", "title": "Jujuy En Carnaval", "artist": "09" }
 ,
